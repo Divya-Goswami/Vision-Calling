@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -85,8 +86,9 @@ public class CallActivity extends BaseActivity implements DuringCallEventHandler
         super.onCreate(savedInstanceState);
         makeActivityContentShownUnderStatusBar();
         setContentView(R.layout.activity_call);
+        Log.i("testing", "here");
 
-        ActionBar ab = getSupportActionBar();
+                ActionBar ab = getSupportActionBar();
         if (ab != null) {
             ab.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
             ab.setCustomView(R.layout.ard_agora_actionbar_with_title);
@@ -127,7 +129,7 @@ public class CallActivity extends BaseActivity implements DuringCallEventHandler
         final String encryptionKey = getIntent().getStringExtra(ConstantApp.ACTION_KEY_ENCRYPTION_KEY);
         final String encryptionMode = getIntent().getStringExtra(ConstantApp.ACTION_KEY_ENCRYPTION_MODE);
 
-        doConfigEngine(encryptionKey, encryptionMode);
+        doConfigEngine();
 
         mGridVideoViewContainer = (GridVideoViewContainer) findViewById(R.id.grid_video_view_container);
         mGridVideoViewContainer.setItemEventHandler(new RecyclerItemClickListener.OnItemClickListener() {
@@ -363,7 +365,7 @@ public class CallActivity extends BaseActivity implements DuringCallEventHandler
         return videoEncFpsIndex;
     }
 
-    private void doConfigEngine(String encryptionKey, String encryptionMode) {
+    private void doConfigEngine() {
         VideoEncoderConfiguration.VideoDimensions videoDimension = ConstantApp.VIDEO_DIMENSIONS[getVideoEncResolutionIndex()];
         VideoEncoderConfiguration.FRAME_RATE videoFps = ConstantApp.VIDEO_FPS[getVideoEncFpsIndex()];
         configEngine(videoDimension, videoFps);

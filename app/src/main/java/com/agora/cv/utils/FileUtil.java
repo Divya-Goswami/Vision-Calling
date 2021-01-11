@@ -10,11 +10,6 @@ public class FileUtil {
     private static final String LOG_FOLDER_NAME = "log";
     private static final String LOG_FILE_NAME = "agora-rtc.log";
 
-    /**
-     * Initialize the log folder
-     * @param context Context to find the accessible file folder
-     * @return the absolute path of the log file
-     */
     public static String initializeLogFile(Context context) {
         File folder;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {

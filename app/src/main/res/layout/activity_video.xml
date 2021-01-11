@@ -44,6 +44,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:background="@color/blue_alpha"
             android:orientation="horizontal">
 
             <ImageView
@@ -60,7 +61,7 @@
                 android:layout_weight="20"
                 android:onClick="onLocalAudioMuteClicked"
                 android:scaleType="centerInside"
-                android:src="@drawable/btn_mute" />
+                android:src="@drawable/btn_mute_audio" />
 
             <ImageView
                 android:layout_width="0dp"
@@ -78,6 +79,8 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/btn_end_call" />
         </LinearLayout>
+
+
 
     </LinearLayout>
 

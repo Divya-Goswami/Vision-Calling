@@ -66,10 +66,10 @@ public class MainActivity extends BaseActivity {
 
 
 
-//    @Override
-//    public void permissionGranted() {
-//
-//    }
+    @Override
+    public void permissionGranted() {
+
+    }
 
 
 }

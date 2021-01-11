@@ -73,8 +73,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Login Successfully.", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
-                // Here you can call you API
-                // Check this tutorial to call server api through Google Volley Library https://handyopinion.com
+
             } else {
                 Toast.makeText(this, "Invalid Credentials", Toast.LENGTH_SHORT).show()
             }
