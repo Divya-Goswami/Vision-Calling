@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <RelativeLayout
+        android:id="@+id/role_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_title_layout_height">
+
+        <TextView
+            android:id="@+id/role_choose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/select_role_title"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/role_content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/broadcaster_layout"
+            style="@style/select_role_block"
+            android:layout_width="300dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginEnd="29dp"
+            android:onClick="onJoinAsBroadcaster">
+
+            <RelativeLayout
+                style="@style/select_role_block_content"
+                android:layout_width="300dp"
+                android:layout_height="73dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="0dp">
+
+                <TextView
+                    android:id="@+id/select_role_title_broadcaster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="42dp"
+                    android:text="@string/select_role_broadcaster"
+                    android:textSize="35dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/audience_layout"
+            style="@style/select_role_block"
+            android:layout_width="300dp"
+            android:layout_height="117dp"
+            android:layout_below="@id/broadcaster_layout"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginTop="30dp"
+            android:onClick="onJoinAsAudience">
+
+            <RelativeLayout
+                style="@style/select_role_block_content"
+                android:layout_width="300dp"
+                android:layout_height="73dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="35dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/select_role_title_audience"
+                    android:text="@string/select_role_audience" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

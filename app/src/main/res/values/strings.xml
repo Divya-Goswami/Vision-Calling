@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">ItInserts</string>
+    <string name="title_activity_login">It Inserts</string>
+    <string name="title_activity_main">Home</string>
+    <string name="select_role_title">Please choose your role</string>
+    <string name="select_role_broadcaster">Broadcaster</string>
+    <string name="select_role_audience">Audience</string>
+    <string name="select_role_broadcaster_hint">Join as broadcaster</string>
+    <string name="select_role_audience_hint">Join as audience</string>
+    <string name="agora_app_id">fdd0d0b23624424ab2271994624c7b1e</string>
+    <string name="agora_access_token">006fdd0d0b23624424ab2271994624c7b1eIAD0EPFWlysGk9Xdl4E5AIqZbYosl5hcZf9RmKe1lRcMJ0Nmo3UAAAAAEACZqwdIzS39XwEAAQDNLf1f</string>
+    <string name="start_broadcast_title">Start Live Streaming</string>
+    <string name="topic_edit_hint">Enter a channel name</string>
+    <string name="powered_by_agora" translatable="false">Powered by agora.io</string>
+    <string name="need_necessary_permissions">Necessary permissions acquired</string>
+
+    <!-- Setting Activity -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_resolution_title">Resolution</string>
+    <string name="setting_stats_title">Show video statistics</string>
+    <string name="setting_mirror_local_title">Local video preview mirror mode</string>
+    <string name="setting_mirror_remote_title">Remote video render mirror mode</string>
+    <string name="setting_mirror_encode_title">Local video encode mirror mode</string>
+
+    <string-array name="string_array_resolutions">
+        <item>320x240</item>
+        <item>480x360</item>
+        <item>640x360</item>
+        <item>640x480</item>
+        <item>960x540</item>
+        <item>1280x720</item>
+    </string-array>
+
+    <string-array name="encryption_mode_values">
+        <item>AES-128-XTS</item>
+        <item>AES-256-XTS</item>
+    </string-array>
+
+    <string-array
+        name="string_array_frame_rate">
+        <item>1</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item> // the default one
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array
+        name="string_array_bit_rate">
+        <item>80</item> // 120P
+        <item>160</item> // 180P
+        <item>200</item> // 240P
+        <item>400</item> // 360P
+        <item>500</item> // 480P
+        <item>1000</item> // 720P
+    </string-array>
+
+    <!-- Live Activity -->
+    <string name="fake_user_name" translatable="false">Shakespeare</string>
+
+    <!-- Legal digits for channel names -->
+    <string name="legal_channel_name_characters" translatable="false">&#xA0;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&amp;()+,-:;&lt;=.>?@[]^_`{|}~</string>
+
+
+    <string name="label_settings">Settings</string>
+
+    <string name="msg_welcome_message">Welcome to Open Video Call</string>
+
+    <string name="label_channel_name_hint">Channel name</string>
+
+    <string name="label_encryption_key_hint">Encryption key</string>
+
+    <string name="label_join">Join</string>
+
+    <string name="label_do_network_test">Test your network</string>
+
+    <string name="label_confirm">Confirm</string>
+
+    <string name="label_send">Send</string>
+
+    <string name="label_options">Options</string>
+    <string name="label_network_testing">Testing…</string>
+    <string name="label_network_testing_placeholder">-</string>
+    <string name="label_network_test_result">Test Result</string>
+
+    <string name="label_debug">Debug</string>
+    <string name="label_quality">Quality</string>
+    <string name="label_rtt">RTT</string>
+    <string name="label_uplink_packet_loss">Uplink Packet Loss</string>
+    <string name="label_downlink_packet_loss">Downlink Packet Loss</string>
+
+    <string name="msg_say_something">Say something…</string>
+
+    <string name="msg_connection_error">Connection error, please check the network settings or make sure channel name/access token are valid</string>
+
+    <string name="label_title_resolution">Resolution</string>
+    <string name="label_title_frame_rate">Frame Rate(fps)</string>
+
+    // DO NOT TRANSLATE
+    <string name="bit_rate_value_with_unit">%d kbps</string>
+    <string name="frame_rate_value_with_unit">%d fps</string>
+</resources>
